@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "mentorai_backend": {
+      "main": "src/mentorai_backend/main.mo",
+      "type": "motoko"
+    },
+    "mentorai_frontend": {
+      "dependencies": [
+        "mentorai_backend"
+      ],
+      "source": [
+        "src/mentorai_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "mentorai_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
